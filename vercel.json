@@ -17,14 +17,14 @@
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://your-project-name.vercel.app",
-        "APP_KEY": "@app_key",
+        "APP_KEY": "@APP_KEY",
         "DB_CONNECTION": "pgsql",
-        "DB_HOST": "@db_host",
-        "DB_PORT": "@db_port",
-        "DB_DATABASE": "@db_database",
-        "DB_USERNAME": "@db_username",
-        "DB_PASSWORD": "@db_password",
-        "XENDIT_API_KEY": "@xendit_api_key",
-        "XENDIT_WEBHOOK_TOKEN": "@xendit_webhook_token"
+        "DB_HOST": "@DB_HOST",
+        "DB_PORT": "@DB_PORT",
+        "DB_DATABASE": "@DB_DATABASE",
+        "DB_USERNAME": "@DB_USERNAME",
+        "DB_PASSWORD": "@DB_PASSWORD",
+        "XENDIT_API_KEY": "@XENDIT_API_KEY",
+        "XENDIT_WEBHOOK_TOKEN": "@XENDIT_WEBHOOK_TOKEN"
     }
 }
