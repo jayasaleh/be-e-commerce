@@ -20,7 +20,7 @@ class Product extends Model
         'image_url',
     ];
     protected $casts = [
-        'price' => 'decimals:2',
+        'price' => 'decimal:2',
     ];
     public function orderItems(): HasMany
     {

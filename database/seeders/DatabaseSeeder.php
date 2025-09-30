@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\ApiKey;
+use App\Models\Product;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -16,7 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             ApiKeySeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+            ProductSeeder::class
         ]);
     }
 }
