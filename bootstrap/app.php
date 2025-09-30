@@ -13,6 +13,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias(['auth.apikey' => \App\Http\Middleware\ApiKeyMiddleware::class]);
+        $middleware->validateCsrfTokens(except: [
+            'api/v1/payment-webhook',
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

@@ -8,3 +8,7 @@ Route::prefix('v1')->middleware('auth.apikey')->group(function () {
   require base_path('routes/api/v1/checkout.php');
   require base_path('routes/api/v1/payment.php');
 });
+Route::prefix('v1')->group(function () {
+
+  require base_path('routes/api/v1/webhooks.php');
+});
