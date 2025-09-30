@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "framework": null,
+    "builds": [
+        {
+            "src": "/public/index.php",
+            "use": "vercel-php@0.6.0"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://your-project-name.vercel.app",
+        "APP_KEY": "@app_key",
+        "DB_CONNECTION": "pgsql",
+        "DB_HOST": "@db_host",
+        "DB_PORT": "@db_port",
+        "DB_DATABASE": "@db_database",
+        "DB_USERNAME": "@db_username",
+        "DB_PASSWORD": "@db_password",
+        "XENDIT_API_KEY": "@xendit_api_key",
+        "XENDIT_WEBHOOK_TOKEN": "@xendit_webhook_token"
+    }
+}
