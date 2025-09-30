@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('order_number')->unique();
             $table->decimal('total_amount', 12, 2);
             $table->enum('status', ['pending', 'paid', 'processing', 'shipped', 'completed', 'cancelled', 'failed'])->default('pending');
-            $table->string('shipping_address');
+            $table->text('shipping_address');
             $table->string('payment_gateway_ref')->nullable()->index();
             $table->string('payment_url')->nullable();
             $table->timestamps();
