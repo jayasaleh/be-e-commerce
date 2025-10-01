@@ -26,5 +26,6 @@
         "DB_PASSWORD": "@DB_PASSWORD",
         "XENDIT_API_KEY": "@XENDIT_API_KEY",
         "XENDIT_WEBHOOK_TOKEN": "@XENDIT_WEBHOOK_TOKEN"
-    }
+    },
+    "script": "bash build.sh"
 }
