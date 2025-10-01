@@ -1,29 +1,13 @@
 {
+    "$schema": "http://openapi.vercel.sh/vercel.json",
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php",
+            "memory": 512,
+            "maxDuration": 30
+        }
+    },
     "version": 2,
-    "builds": [
-        {
-            "src": "public/index.php",
-            "use": "@vercel/php"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/public/index.php"
-        }
-    ],
-    "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "http://localhost",
-        "APP_KEY": "@APP_KEY",
-        "DB_CONNECTION": "pgsql",
-        "DB_HOST": "@DB_HOST",
-        "DB_PORT": "@DB_PORT",
-        "DB_DATABASE": "@DB_DATABASE",
-        "DB_USERNAME": "@DB_USERNAME",
-        "DB_PASSWORD": "@DB_PASSWORD",
-        "XENDIT_API_KEY": "@XENDIT_API_KEY",
-        "XENDIT_WEBHOOK_TOKEN": "@XENDIT_WEBHOOK_TOKEN"
-    }
+    "buildCommand": "composer run vercel",
+    "rewrites": [{ "source": "/(.*)", "destination": "api/index.php" }]
 }
