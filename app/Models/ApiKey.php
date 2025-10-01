@@ -8,7 +8,7 @@ use Illuminate\Notifications\Notifiable;
 
 class ApiKey extends Model
 {
-    //
+    // api key
     use HasFactory, Notifiable;
     protected $fillable = [
         'name',
